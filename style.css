@@ -9,12 +9,12 @@ html {
 body {
   background-color: #f0f0f0;
   color: #000;
-  font-size: 0.875rem;
+  font-size: 0.9rem;
 }
 
 a {
   color: #000;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   text-decoration: none;
 }
 
@@ -29,8 +29,8 @@ li {
 
 .logo {
   width: 100px;
-  line-height: 1px;
-  margin-right: 60px;
+  line-height: 4px;
+  margin-right: 80px;
 }
 
 .logo a {
@@ -40,44 +40,35 @@ li {
 .section-title {
   font-weight: normal;
   line-height: 1;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
-/*
-疑似要素を使って下線を引く
-*/
+
 .section-title::after {
   content: "";
-  width: 40px;
-  height: 1px;
+  width: 60px;
+  height: 4px;
   background-color: #000;
   display: block;
 }
 
-/*
-「display: inline-block;」を設定してブロック化することで、
-改行されてmargin-bottomが使用できるようになる
-*/
 .section-title .en {
   display: block;
   font-size: 2.25rem;
-  letter-spacing: 0.3em;
-  margin-bottom: 10px;
+  letter-spacing: 1em;
+  margin-bottom: 40px;
 }
 
 .section-title .ja {
   display: block;
   font-size: 0.875rem;
-  margin-bottom: 36px;
+  margin-bottom: 40px;
 }
 
-/*
-横幅を設定するための共通クラス
-*/
 .wrapper {
   width: 100%;
-  max-width: 1032px;
-  padding: 0 16px;
+  max-width: 1050px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -85,7 +76,7 @@ li {
 ヘッダー
 -------------------------------------------*/
 #header {
-  height: 80px;
+  height: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -102,7 +93,7 @@ li {
 }
 
 #header .inner li {
-  margin-right: 30px;
+  margin-right: 40px;
 }
 
 #header .inner li:last-child {
@@ -110,9 +101,9 @@ li {
 }
 
 #header .contact {
-  width: 200px;
-  height: 80px;
-  line-height: 80px;
+  width: 300px;
+  height: 90px;
+  line-height: 85px;
   background-color: #000;
   color: #fff;
   font-size: 0.75rem;
@@ -128,7 +119,7 @@ li {
 Mainvisual
 -------------------------------------------*/
 #mainvisual {
-  margin-bottom: 120px;
+  margin-bottom: 150px;
 }
 
 #mainvisual img {
@@ -141,7 +132,7 @@ Mainvisual
 News
 -------------------------------------------*/
 #news {
-  margin-bottom: 120px;
+  margin-bottom: 150px;
 }
 
 #news .list {
@@ -152,7 +143,7 @@ News
 #news .list li {
   width: calc(100%/3);
   border-right: solid 1px #000;
-  padding: 10px 20px;
+  padding: 20px 25px;
 }
 
 #news .list li:first-child {
@@ -165,18 +156,18 @@ News
 }
 
 #news .list li .date-area {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 #news .list li .date-area span {
-  width: 50px;
-  height: 20px;
-  line-height: 20px;
+  width: 60px;
+  height: 30px;
+  line-height: 40px;
   background-color: #000;
   color: #fff;
   display: inline-block;
   font-size: 0.75rem;
-  margin-left: 10px;
+  margin-left: 20px;
   text-align: center;
 }
 
@@ -185,7 +176,7 @@ About
 -------------------------------------------*/
 #about {
   display: flex;
-  margin-bottom: 120px;
+  margin-bottom: 140px;
 }
 
 #about .img {
@@ -194,13 +185,13 @@ About
 
 #about .img img {
   width: 100%;
-  height: 400px;
+  height: 500px;
   object-fit: cover;
 }
 
 #about .text {
   width: 45%;
-  padding: 180px 5% 0 5%;
+  padding: 190px 5% 0 5%;
 }
 
 #about .text p {
@@ -211,7 +202,7 @@ About
 Business
 -------------------------------------------*/
 #business {
-  margin-bottom: 120px;
+  margin-bottom: 140px;
 }
 
 #business .flex {
@@ -222,7 +213,7 @@ Business
 
 #business .flex .left {
   width: 46%;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 #business .flex .right {
@@ -230,7 +221,7 @@ Business
 }
 
 #business .flex .item {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 #business .flex .item:last-child {
@@ -239,14 +230,14 @@ Business
 
 #business .flex .title {
   font-weight: bold;
-  margin: 0 0 10px 18px;
+  margin: 0 0 15px 20px;
   position: relative;
 }
 
 #business .flex .title::before {
   content: "";
-  width: 8px;
-  height: 1px;
+  width: 9px;
+  height: 5px;
   background-color: #000;
   position: absolute;
   top: 50%;
@@ -257,7 +248,7 @@ Business
 Company
 -------------------------------------------*/
 #company {
-  height: 750px;
+  height: 780px;
   display: flex;
   align-items: center;
   position: relative;
@@ -275,13 +266,13 @@ Company
 #company .img {
   width: 53%;
   position: absolute;
-  top: 115px;
+  top: 120px;
   right: 0;
 }
 
 #company .img img {
   width: 100%;
-  height: 400px;
+  height: 500px;
   object-fit: cover;
 }
 
@@ -293,7 +284,7 @@ Company
 
 #company .info dt {
   width: 20%;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 #company .info dt:first-of-type {
@@ -302,7 +293,7 @@ Company
 
 #company .info dd {
   width: 80%;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 #company .info dd:first-of-type {
@@ -325,7 +316,7 @@ footer
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 0;
+  padding: 50px 0;
 }
 
 #footer .flex .logo {
@@ -341,16 +332,16 @@ SP
 -------------------------------------------*/
 @media screen and (max-width: 900px) {
   .logo {
-    width: 80px;
+    width: 90px;
     margin: 8px 0;
   }
 
   .section-title {
-    margin-bottom: 34px;
+    margin-bottom: 44px;
   }
 
   .section-title .ja {
-    margin-bottom: 24px;
+    margin-bottom: 34px;
   }
 
   /*-------------------------------------------
@@ -369,14 +360,14 @@ SP
   Mainvisual
   -------------------------------------------*/
   #mainvisual {
-    margin-bottom: 80px;
+    margin-bottom: 90px;
   }
 
   /*-------------------------------------------
   News
   -------------------------------------------*/
   #news {
-    margin-bottom: 80px;
+    margin-bottom: 90px;
   }
 
   #news .list {
@@ -386,8 +377,8 @@ SP
   #news .list li {
     width: 100%;
     border-right: none;
-    padding: 10px 0;
-    margin-bottom: 20px;
+    padding: 20px 0;
+    margin-bottom: 30px;
   }
 
   #news .list li:last-child {
@@ -399,28 +390,28 @@ SP
   -------------------------------------------*/
   #about {
     flex-direction: column;
-    margin-bottom: 80px;
+    margin-bottom: 90px;
   }
 
   #about .img {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   #about .img img {
-    height: 300px;
+    height: 330px;
   }
 
   #about .text {
     width: 100%;
-    padding: 0 16px;
+    padding: 0 20px;
   }
 
   /*-------------------------------------------
   Business
   -------------------------------------------*/
   #business {
-    margin-bottom: 80px;
+    margin-bottom: 90px;
   }
 
   #business .flex {
@@ -430,7 +421,7 @@ SP
 
   #business .flex .left {
     width: 100%;
-    margin: 0 0 30px 0;
+    margin: 0 0 40px 0;
   }
 
   #business .flex .right {
@@ -439,7 +430,7 @@ SP
 
   #business .flex .item {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   #business .flex .title {
@@ -458,8 +449,8 @@ SP
 
   #company .text {
     width: 100%;
-    padding: 40px 20px;
-    margin-bottom: 20px;
+    padding: 50px 30px;
+    margin-bottom: 30px;
     position: static;
   }
 
@@ -475,17 +466,17 @@ SP
 
   #company .info dt {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   #company .info dd {
     width: 100%;
-    margin-top: 5px;
-    padding-left: 14px;
+    margin-top: 6px;
+    padding-left: 18px;
   }
 
   #company .info dd:first-of-type {
-    margin-top: 5px;
+    margin-top: 8px;
   }
 
   #company .info .add {
@@ -501,6 +492,6 @@ SP
   }
 
   #footer .flex .logo {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
